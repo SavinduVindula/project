@@ -22,7 +22,7 @@ video.addEventListener("ended", () => {
 // Click to enter
 btn.addEventListener("click", () => {
     screen.style.opacity = "0";
-    
+
     // Play background music
     if (bgMusic) {
         bgMusic.play().catch(e => console.log("Audio play failed: ", e));
@@ -53,7 +53,7 @@ if (musicBtn && bgMusic) {
 
 // ================= RSVP (Google Sheets) =================
 
-const scriptURL = "YOUR_GOOGLE_SCRIPT_URL"; // paste here
+const scriptURL = "https://script.google.com/macros/s/AKfycbwQ0QWLOogmvv0mi4LjHL4mx8dtQDh-vL-rYUxaeqLwGf63nPLPWaKIC0vdyeDOzJgVDw/exec"; // paste here
 
 document.getElementById("rsvpForm").addEventListener("submit", function (e) {
     e.preventDefault();
